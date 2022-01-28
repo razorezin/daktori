@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Tabib</string>
+    <string name="title_booking">Booking</string>
+    <string name="title_treatment">Treatments</string>
+    <string name="title_appointment">Appointments</string>
+    <string name="phone_preview">05 55 38 97 88</string>
+    <string name="locqtion_preview">Alger - Oued SMAR</string>
+    <string name="search_for_a_doctor">Search for a doctor...</string>
+    <string name="name_transition_name">nameDoctorBook</string>
+    <string name="image_transition_name">imageDoctorBooking</string>
+    <string name="speciality_transition_name">speciality_transition_name</string>
+    <string name="location_transition_name">location_transition_name</string>
+    <string name="phone_transition_name">phone_transition_name</string>
+    <string name="phone_image_transition_name">phone_image_transition_name</string>
+    <string name="location_image_transition_name">location_image_transition_name</string>
+    <string name="card_transition_name">card_transition_name</string>
+    <string name="you_have">You have</string>
+    <string name="actif_treatments">actif treatments</string>
+    <string name="treatment">Treatment</string>
+    <string name="you_don_t_have_any_actif_treatment">You don\'t have any active treatment \n(Swipe to refresh)</string>
+    <string name="no_doctors">There is no doctor yet \n(swipe to refresh)</string>
+    <string name="my_appointments">My Appointments</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="patient_name">Patient Amine</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="phone_number">Phone number</string>
+    <string name="password">Password</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="scan_appointment">Scan Appointment</string>
+    <string name="reserve">Reserve</string>
+    <string name="confirm_reservation">Confirm Reservation</string>
+    <string name="empty_appointment">You don\'t have any appointment\n (Swipe to refresh)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="already_reserved">This booking is already reserved</string>
+    <string name="no_internet">Connexion to the server failed\n(swipe to refresh)</string>
+    <string name="appointment_info">Appointment Info</string>
+    <string name="send">Send</string>
+    <string name="ask_advice">Ask Advice</string>
+    <string name="write_your_message_here">Write your message here</string>
+    <string name="phone_menu">Phone Menu</string>
+    <string name="call">Call</string>
+    <string name="semd_sms">Send SMS</string>
+    <string name="copied">Copied!</string>
+    <string name="take_an_appointment">Take an appointment</string>
+    <string name="channel_name">channel_name</string>
+    <string name="channel_description">channel_description</string>
+    <string name="default_channel_id">default_channel_id</string>
+    <string name="notif_msg_default">You have a new appointment</string>
+    <string name="default_notification_channel_id">1</string>
+
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionName="@string/card_transition_name"
+    tools:context=".ui.booking.DoctorDetailFragment">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/titleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constrainedWidth="true"
+        android:text="@string/take_an_appointment"
+        android:textColor="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageDoctorDetail" />
+
+    <TextView
+        android:id="@+id/textNameDoctorDetail"
+        style="@style/titleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor Ahmed"
+        app:layout_constrainedWidth="true"
+        android:transitionName="@string/name_transition_name"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonBackDoctorDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonBackDoctorDetail"
+        app:layout_constraintTop_toTopOf="@+id/buttonBackDoctorDetail" />
+
+    <ImageButton
+        android:id="@+id/buttonBackDoctorDetail"
+        style="@style/default_image_button"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_round_arrow_back_ios_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageDoctorDetail"
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:transitionName="@string/image_transition_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBackDoctorDetail"
+        app:shapeAppearanceOverlay="@style/circleImageStyle"
+        tools:src="@drawable/doctor_harold" />
+
+    <TextView
+        android:id="@+id/textSpecialityDoctorDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Psychology"
+        app:layout_constrainedWidth="true"
+        android:transitionName="@string/speciality_transition_name"
+        app:layout_constraintBottom_toTopOf="@+id/textLocationDoctorDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageDoctorDetail"
+        app:layout_constraintTop_toTopOf="@+id/imageDoctorDetail"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/textPhoneDoctorDetail"
+        style="@style/clickableTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/phone_preview"
+        android:transitionName="@string/phone_transition_name"
+        app:layout_constrainedWidth="true"
+        android:drawableStart="@drawable/ic_round_local_phone_24"
+        android:drawablePadding="4dp"
+        android:drawableTint="?attr/clickableTextColor"
+        app:layout_constraintBottom_toBottomOf="@+id/imageDoctorDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textLocationDoctorDetail"
+        app:layout_constraintTop_toBottomOf="@+id/textLocationDoctorDetail" />
+
+    <TextView
+        android:id="@+id/textLocationDoctorDetail"
+        style="@style/clickableTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locqtion_preview"
+        android:transitionName="@string/location_transition_name"
+        android:drawableStart="@drawable/ic_round_location_on_24"
+        android:drawablePadding="4dp"
+        android:drawableTint="?attr/clickableTextColor"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/textPhoneDoctorDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textSpecialityDoctorDetail"
+        app:layout_constraintTop_toBottomOf="@+id/textSpecialityDoctorDetail" />
+
+    <ImageButton
+        android:id="@+id/buttonCalendarLeftBooking"
+        style="@style/default_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_round_keyboard_arrow_left_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textCalendarMonthBooking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textCalendarMonthBooking" />
+
+    <com.michalsvec.singlerowcalendar.calendar.SingleRowCalendar
+        android:id="@+id/calendarBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:deselection="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCalendarMonthBooking"
+        app:longPress="false"
+        app:multiSelection="false">
+
+    </com.michalsvec.singlerowcalendar.calendar.SingleRowCalendar>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeBookings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarBooking">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerTimeBooking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/booking_item_layout" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <ImageButton
+        android:id="@+id/buttonCalendarRightBooking"
+        style="@style/default_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_round_keyboard_arrow_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textCalendarMonthBooking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textCalendarMonthBooking" />
+
+    <TextView
+        android:id="@+id/textCalendarMonthBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="June, 2021"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

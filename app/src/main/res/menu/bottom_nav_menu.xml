@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_booking"
+        android:icon="@drawable/ic_round_room_service_24"
+        android:title="@string/title_booking" />
+
+    <item
+        android:id="@+id/navigation_treatment"
+        android:icon="@drawable/ic_round_medical_services_24"
+        android:title="@string/title_treatment" />
+
+    <item
+        android:id="@+id/navigation_appointment"
+        android:icon="@drawable/ic_round_calendar_today_24"
+        android:title="@string/title_appointment" />
+
+</menu>

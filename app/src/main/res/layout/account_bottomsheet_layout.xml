@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="16dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageAccountMenu"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_gravity="center"
+        app:shapeAppearanceOverlay="@style/circleImageStyle"
+        app:srcCompat="@drawable/patient" />
+
+    <TextView
+        android:id="@+id/textNameMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        style="@style/titleTextStyle"
+        android:gravity="center"
+        android:text="@string/patient_name" />
+
+    <TextView
+        android:id="@+id/textSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:text="@string/settings"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        app:drawableStartCompat="@drawable/ic_baseline_settings_24" />
+
+    <TextView
+        android:id="@+id/textLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:text="@string/logout"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        app:drawableStartCompat="@drawable/ic_round_login_24" />
+
+</LinearLayout>

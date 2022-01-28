@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Theme">
+        <attr name="searchBackgroundColor" format="color"/>
+        <attr name="calendarItemBackgroundColor" format="color"/>
+        <attr name="calendarItemSelectedBackgroundColor" format="color"/>
+        <attr name="bigTimeColor" format="color"/>
+        <attr name="imageButtonBackgroundColor" format="color"/>
+        <attr name="treatmentCardBackgroundColor" format="color"/>
+        <attr name="textColorOnTreatmentCard" format="color"/>
+        <attr name="cardSelectedBackgroundColor" format="color"/>
+        <attr name="onCardSelectedBackgroundColor" format="color"/>
+        <attr name="clickableTextColor" format="color"/>
+    </declare-styleable>
+</resources>

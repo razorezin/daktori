@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="?attr/cardBackgroundColor"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    android:alpha="0.3"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/textDateAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Juin 06 2021"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageCalendar"
+            app:layout_constraintStart_toEndOf="@+id/imageCalendar"
+            app:layout_constraintTop_toTopOf="@+id/imageCalendar" />
+
+        <ImageView
+            android:id="@+id/imageCalendar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_round_calendar_today_24" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageDoctorAppointment"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageCalendar"
+            app:shapeAppearanceOverlay="@style/circleImageStyle"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textNameAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Doctor Ahmed"
+            app:layout_constraintBottom_toTopOf="@+id/textSpecialityAppointment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageDoctorAppointment"
+            app:layout_constraintTop_toTopOf="@id/imageDoctorAppointment" />
+
+        <TextView
+            android:id="@+id/textSpecialityAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Psychology"
+            app:layout_constraintBottom_toTopOf="@+id/imageLocation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textNameAppointment"
+            app:layout_constraintTop_toBottomOf="@+id/textNameAppointment" />
+
+        <TextView
+            android:id="@+id/textLocationAppointment"
+            style="@style/clickableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/locqtion_preview"
+            app:layout_constraintBottom_toBottomOf="@+id/imageLocation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageLocation"
+            app:layout_constraintTop_toTopOf="@+id/imageLocation" />
+
+        <TextView
+            android:id="@+id/textPhoneAppointment"
+            style="@style/clickableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/phone_preview"
+            app:layout_constraintBottom_toBottomOf="@+id/imagePhone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imagePhone"
+            app:layout_constraintTop_toTopOf="@+id/imagePhone" />
+
+        <ImageView
+            android:id="@+id/imageLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/imagePhone"
+            app:layout_constraintStart_toStartOf="@+id/textSpecialityAppointment"
+            app:layout_constraintTop_toBottomOf="@+id/textSpecialityAppointment"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_round_location_on_24"
+            app:tint="@color/blue" />
+
+        <ImageView
+            android:id="@+id/imagePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageDoctorAppointment"
+            app:layout_constraintStart_toStartOf="@+id/imageLocation"
+            app:layout_constraintTop_toBottomOf="@+id/imageLocation"
+            app:srcCompat="@drawable/ic_round_local_phone_24"
+            app:tint="@color/blue" />
+
+        <TextView
+            android:id="@+id/textTimeStartAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="9 AM"
+            android:textColor="?attr/bigTimeColor"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageDoctorAppointment" />
+
+        <TextView
+            android:id="@+id/textTimeEndAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="9:30 AM"
+            android:textColor="?attr/bigTimeColor"
+            android:textSize="24sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textTimeStartAppointment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/textTimeStartAppointment"
+            app:layout_constraintEnd_toStartOf="@+id/textTimeEndAppointment"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textTimeStartAppointment"
+            app:layout_constraintTop_toTopOf="@+id/textTimeStartAppointment"
+            app:srcCompat="@drawable/ic_round_arrow_right_alt_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/titleTextStyle"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:text="@string/phone_menu" />
+
+    <TextView
+        android:id="@+id/textCallPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableStart="@drawable/ic_round_local_phone_24"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:text="@string/call" />
+
+    <TextView
+        android:id="@+id/textSendSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableStart="@drawable/ic_round_sms_24"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:text="@string/semd_sms" />
+
+    <TextView
+        android:id="@+id/textCopyPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableStart="@drawable/ic_baseline_file_copy_24"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:text="@string/copy" />
+</LinearLayout>

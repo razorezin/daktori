@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1012421609020",
+    "project_id": "tabib-1fd91",
+    "storage_bucket": "tabib-1fd91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012421609020:android:92fb974ddcf74964566539",
+        "android_client_info": {
+          "package_name": "com.redapps.tabib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012421609020-pg8i2e185eenjb89s0hj8940p8ac2nbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwEeDryqZ4HQ3XQxysaooE2If30Tgi0os"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012421609020-pg8i2e185eenjb89s0hj8940p8ac2nbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

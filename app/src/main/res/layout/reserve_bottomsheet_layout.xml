@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/titleTextStyle"
+        android:gravity="center"
+        android:text="@string/reserve" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView9"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        app:srcCompat="@drawable/doctor1"
+        android:layout_gravity="center"
+        android:layout_marginVertical="16dp"
+        app:shapeAppearanceOverlay="@style/circleImageStyle"/>
+
+    <TextView
+        android:id="@+id/textNameReserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:drawableStart="@drawable/ic_round_person_24"
+        android:drawablePadding="16dp"
+        android:text="Docteur Ahmed" />
+
+    <TextView
+        android:id="@+id/textSpecialityReserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:drawableStart="@drawable/ic_round_local_hospital_24"
+        android:drawablePadding="16dp"
+        android:text="Psychology" />
+
+    <TextView
+        android:id="@+id/textLocationReserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:drawableStart="@drawable/ic_round_location_on_24"
+        android:drawablePadding="16dp"
+        android:text="@string/locqtion_preview" />
+
+    <TextView
+        android:id="@+id/textDateReserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:drawableStart="@drawable/ic_round_calendar_today_24"
+        android:drawablePadding="16dp"
+        android:text="06 July 2021" />
+
+    <TextView
+        android:id="@+id/textTimeReserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:drawableStart="@drawable/ic_round_access_time_24"
+        android:drawablePadding="16dp"
+        android:text="9 AM" />
+
+    <Button
+        android:id="@+id/buttonReserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:text="@string/confirm_reservation" />
+</LinearLayout>
